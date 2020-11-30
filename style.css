@@ -1,0 +1,137 @@
+html {
+  background-image: url("images/chalkboard.jpg");
+  background-repeat: repeat;
+}
+/*Consider a different background - the pattern library*/
+header {
+	margin-bottom: 15px;
+  text-align: center;
+}
+
+/* NAV */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+/* general body formatting for consistency across site - font/color */
+body { 
+	font-family: 'Courier New';
+  color: whitesmoke
+	}
+
+/*ensure images across entire width */
+.full-width {
+	width: 100%;	
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 14pt;
+  margin: 20px;
+}
+
+p {
+  padding: 15px;
+}
+
+footer h3 {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.group img {
+  width: 100%;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Desktop */
+
+@media all and (min-width: 600px) {
+
+section {
+    padding: 0 8%;
+  }
+
+.group {
+    flex-direction: row;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+header h1 {
+    margin: 14px 0 14px 20px;
+    padding-top: 5px;
+  } 
+  
+header nav {
+    margin-top: 14px;
+  }
+}
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+
+/* link styling */
+a:link    { color: whitesmoke; }
+a:visited { color: whitesmoke;   }
+a:hover   { color: blanchedalmond }
+a:active  { color: aquamarine;  }
